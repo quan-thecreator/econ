@@ -1,4 +1,5 @@
 \contentsline {chapter}{\numberline {1}}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Wednesday, August 14}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Thursday, August 15}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1} FOP, the Factors of production }{4}{subsection.1.2.1}%
 \contentsfinish 
