@@ -3,7 +3,9 @@
 \input{preamble}
 \input{macros}
 \input{letterfonts}
+\usepackage{pgfplots}
 
+\pgfplotsset{compat=1.18}
 \title{\Huge{Economics}\\A tale of doom}
 \author{\huge{Krishna Ayyalasomayajula}}
 \date{}
@@ -136,7 +138,72 @@ $$
 $$
 \frac{\text{Entity A's import of Good X}}{\text{Entity B's Good Y}}
 $$
-WORK ON THIS WHEN YOU GET HOME!!!!.
+
+  \begin{tikzpicture}
+        \begin{axis}[
+            width=0.8\textwidth,
+            height=0.6\textwidth,
+            xlabel={AR-15s},
+            ylabel={Pizzas},
+            title={PPCs of Entity 1 and Entity 2},
+            legend pos=outer north east,
+            grid=major,
+            domain=0:10,
+            samples=100,
+            xmajorgrids=true,
+            ymajorgrids=true
+            ]
+            % PPC for Entity 1
+            \addplot[blue, thick] {10 - (x^2)/10};
+            \addlegendentry{Entity 1 PPC}
+
+            % PPC for Entity 2
+            \addplot[red, thick] {15 - 2*sqrt(x)};
+            \addlegendentry{Entity 2 PPC}
+
+            % Annotate intersection points for Entity 1
+            \addplot[only marks, mark=*, color=blue] coordinates {(0,10) (10,0)};
+            \node at (axis cs:0,10) [anchor=south] {$(0,10)$};
+            \node at (axis cs:10,0) [anchor=north east] {$(10,0)$};
+
+            % Annotate intersection points for Entity 2
+            \addplot[only marks, mark=*, color=red] coordinates {(0,15) (10,0)};
+            \node at (axis cs:0,15) [anchor=south] {$(0,15)$};
+            \node at (axis cs:10,0) [anchor=north east] {$(10,0)$};
+
+            % Axis limits
+            \axisline style={->};
+        \end{axis}
+    \end{tikzpicture}
+  This is such a graph where there exists no comparative advantage because the oppurtunity cost to produce AR-15s vs. That of Pizzas is always cheaper than the \textbf{terms of trade} if Entity 1 were to trade with Entity 2. Entity A has the coimplete Absolute advantage, and has no need to work with Entity 2. However, it is important to note that Absolute advanteage does not mean that there does not exist a comparative advantage. 
+  \vspace{1cm}
+
+\begin{tikzpicture}[scale=1.2]
+    % Axes
+    \draw[->] (0,0) -- (11,0) node[right] {Pizzas};
+    \draw[->] (0,0) -- (0,6.5) node[above] {AR-15s};
+    
+    % Labels for axes
+    \node[below] at (10,0) {10,000};
+    \node[below] at (5,0) {5,000};
+    \node[left] at (0,5) {5,000};
+    \node[left] at (0,1) {1,000};
+    
+    % PPCs
+    \draw[thick, blue] (0,1) to[out=-5,in=160] (10,0) node[right] {A};
+    \draw[thick, red] (0,5) to[out=-30,in=120] (5,0) node[right] {B};
+    
+    % Intersection point
+
+
+    % Legend
+    \node[blue, right] at (5.5,6) {A: Italian Military};
+    \node[red, right] at (5.5,5.5) {B: American Military};
+    
+    % Title
+    \node[above] at (5.5,6.5) {\large Intersecting Production Possibility Curves};
+\end{tikzpicture}
+
 \end{note}
 \end{document}
 
