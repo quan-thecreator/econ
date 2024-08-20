@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1723917398.23861 "econ_notes.tex" "econ_notes.pdf" "econ_notes" 1723917399.79855 2
+["pdflatex"] 1724102001.27428 "econ_notes.tex" "econ_notes.pdf" "econ_notes" 1724102002.92776 2
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1716849630 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc" 1716849630 3877 2ca811886181a05a861d20a35de75e06 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -298,9 +298,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723612255.88513 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723612211 7112998 61957395acf5a8d621f820b36f360544 ""
-  "econ_notes.aux" 1723917399.72494 2904 16140987b5b3e4ff043fae01a2c4d53a "pdflatex"
-  "econ_notes.tex" 1723917396.69161 9199 1e6950665f7075f17200440004d0c30b ""
-  "econ_notes.toc" 1723917399.72827 412 e84f1cb6b85134f00e165a4e614e66a6 "pdflatex"
+  "econ_notes.aux" 1724102002.85094 2904 fffe48c02e4574734de4446a8b7a48d4 "pdflatex"
+  "econ_notes.tex" 1724102001.25094 9292 4af0c723eedcd7b5c4ed7878ea298495 ""
+  "econ_notes.toc" 1724102002.85094 412 e84f1cb6b85134f00e165a4e614e66a6 "pdflatex"
   "letterfonts.tex" 1723668501.15123 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1723668501.15123 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1723668501.15123 20053 cac64cd8837854e12008c40220fda887 ""
